@@ -307,7 +307,7 @@ describe('useCart Hook', () => {
       result.current.updateProductAmount({ amount: 2, productId });
     });
 
-    await waitForNextUpdate({ timeout: 200 });
+    await waitForNextUpdate({ timeout: 2000 });
 
     expect(result.current.cart).toEqual(
       expect.arrayContaining([
